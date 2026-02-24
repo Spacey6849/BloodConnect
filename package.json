@@ -1,0 +1,44 @@
+{
+  "name": "smart-blood-platform-ui",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "predev": "node -e \"try{require('fs').rmSync('.next',{recursive:true,force:true})}catch(e){}\"",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.7.0",
+    "@supabase/supabase-js": "2.48.0",
+    "@tailwindcss/forms": "0.5.7",
+    "@tanstack/react-query": "5.90.3",
+    "bcryptjs": "2.4.3",
+    "clsx": "2.1.1",
+    "date-fns": "3.6.0",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
+    "jose": "^6.1.0",
+    "jsonwebtoken": "9.0.2",
+    "leaflet": "1.9.4",
+    "lucide-react": "0.460.0",
+    "next": "14.2.5",
+    "nodemailer": "6.9.14",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-leaflet": "4.2.1",
+    "tailwind-merge": "2.3.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/leaflet": "1.9.12",
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.65",
+    "@types/react-dom": "18.2.22",
+    "autoprefixer": "10.4.18",
+    "postcss": "8.4.38",
+    "tailwindcss": "3.4.9",
+    "typescript": "5.6.2"
+  }
+}
