@@ -3,8 +3,8 @@ import 'leaflet/dist/leaflet.css'
 import FAQBot from '@/components/faq/FAQBot.client'
 
 export const metadata = {
-  title: 'BloodConnect Dashboard',
-  description: 'Operational intelligence for regional blood supply networks'
+  title: 'BloodConnect — Smart Blood Availability & Donor Coordination',
+  description: 'Real-time blood supply coordination for hospitals, blood banks, and donors'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
