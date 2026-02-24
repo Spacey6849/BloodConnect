@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from 'react'
 type NavItem = { name: string; href: string }
 
 const navItems: NavItem[] = [
+  { name: 'Home', href: '/' },
   { name: 'Overview', href: '/overview' },
   { name: 'Inventory', href: '/inventory' },
   { name: 'Donors', href: '/donors' },
@@ -69,7 +70,7 @@ export function TopNav({ userName, userRole }: Props) {
                 return true
               })
               return items.map(item => {
-              const active = pathname === item.href || (item.href !== '/overview' && pathname?.startsWith(item.href))
+              const active = pathname === item.href || (item.href !== '/' && item.href !== '/overview' && pathname?.startsWith(item.href))
               const base = 'relative px-3 py-2 text-sm font-medium  transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50'
               const activeClasses = 'text-gray-900 dark:text-white bg-white/70 dark:bg-white/10 border border-emerald-500/40 dark:border-emerald-400/35 shadow-inner ring-1 ring-emerald-500/15 dark:ring-emerald-400/20'
               const normal = 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
